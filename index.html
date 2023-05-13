@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+        
+        <style>
+            body
+            {
+                position: relative;
+            }
+            
+            .container
+            {
+                margin-top: 100px;
+            }
+        </style>
+        
+        <title>Portfolio</title>
+        <link href="StyleSheet.css" rel="stylesheet">
+    </head>
+
+
+
+
+
+    <body data-spy="scroll" data-target="#EpicNavbar">
+        <nav id="EpicNavbar" class="navbar navbar-light bg-light px-3 fixed-top">
+            <a class="navbar-brand" href="#"></a>
+            
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="#About">About</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="#Projects">Projects</a>
+                </li>
+            </ul>
+        </nav>
+
+
+
+
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 id="Intro">Hi, I'm Katie!</h3>
+                    <p>I'm a junior at UNC studying CS and Biostats. Currently, I am interested in data-driven front-end development and accessible UI/UX designs.</p>
+
+                    <div data-spy="scroll" data-target="#EpicNavbars" data-offset="0">
+                        <h4 id="About">About</h4>
+                        <div class="container mt-3">
+                            <div class="row">
+                                <div class="col">
+                                    <h6 class="mb-3">Work Experience</h6>
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="mx-3">
+                                                <h4>Special Olympics</h4>
+                                                <div><strong>June 2023 - August 2023</strong></div>
+                                                Software engineering intern working on web and app development projects.
+                                            </div>
+                                            <ul class="list-group list-group-flush mt-2">
+                                                <li class="list-group-item">Updating Classy page, an online registration and fundraising tool</li>
+                                                <li class="list-group-item">Restructuring information architecture on general website </li>
+                                                <li class="list-group-item">Building microsites for various Special Olympics Pennsylvania regions</li>
+                                                <li class="list-group-item">Creating UI design for Cities of Inclusion initiative</li>
+                                                <li class="list-group-item">Testing and researching beta version of Special Olympics Pennsylvania app</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="mx-3">
+                                                <h4>Honeywell</h4>
+                                                <div><strong>June 2021 - August 2021</strong></div>
+                                                Mechanical engineering intern working on testing and simulation projects.
+                                            </div>
+                                            <ul class="list-group list-group-flush mt-2">
+                                                <li class="list-group-item">*update later*</li>
+                                                <li class="list-group-item">*update later*</li>
+                                                <li class="list-group-item">*update later*</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <h6 class="mb-3">Skills</h6>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <h4 id="Projects">Projects</h4>
+
+                        <div class = "container">
+                            <div class = "row mt-3 mb-4 button-group filter-button-group">
+                                <div class = "col d-flex justify-content-center">
+                                    <button type = "button" data-filter = "*" class = "btn btn-primary mx-1 text-dark">All</button>
+                                    <button type = "button" data-filter = ".electronic" class = "btn btn-primary mx-1 text-dark">Electronic</button>
+                                    <button type = "button" data-filter = ".clothing" class = "btn btn-primary mx-1 text-dark">Clothing</button>
+                                    <button type = "button" data-filter = ".furniture" class = "btn btn-primary mx-1 text-dark">Furniture</button>
+                                </div>
+                            </div>
+                    
+                            <div class = "row justify-content-center g-4" id = "product-list">
+                                <div class = "col-lg-4 col-md-6 electronic">
+                                    <div class = "product-item">
+                                        <div class = "product-img">
+                                            <img src = "images/product_img_1.jpg" class = "img-fluid d-block mx-auto">
+                                        </div>
+                                        <div class = "product-content text-center py-3">
+                                            <span class = "d-block text-uppercase fw-bold">product name</span>
+                                            <span class = "d-block">$ 68.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class = "col-lg-4 col-md-6 electronic">
+                                    <div class = "product-item">
+                                        <div class = "product-img">
+                                            <img src = "images/product_img_2.jpg" class = "img-fluid d-block mx-auto">
+                                        </div>
+                                        <div class = "product-content text-center py-3">
+                                            <span class = "d-block text-uppercase fw-bold">product name</span>
+                                            <span class = "d-block">$ 68.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class = "col-lg-4 col-md-6 clothing">
+                                    <div class = "product-item">
+                                        <div class = "product-img">
+                                            <img src = "images/product_img_3.jpg" class = "img-fluid d-block mx-auto">
+                                        </div>
+                                        <div class = "product-content text-center py-3">
+                                            <span class = "d-block text-uppercase fw-bold">product name</span>
+                                            <span class = "d-block">$ 68.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class = "col-lg-4 col-md-6 clothing">
+                                    <div class = "product-item">
+                                        <div class = "product-img">
+                                            <img src = "images/product_img_4.jpg" class = "img-fluid d-block mx-auto">
+                                        </div>
+                                        <div class = "product-content text-center py-3">
+                                            <span class = "d-block text-uppercase fw-bold">product name</span>
+                                            <span class = "d-block">$ 68.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class = "col-lg-4 col-md-6 electronic">
+                                    <div class = "product-item">
+                                        <div class = "product-img">
+                                            <img src = "images/product_img_5.jpg" class = "img-fluid d-block mx-auto">
+                                        </div>
+                                        <div class = "product-content text-center py-3">
+                                            <span class = "d-block text-uppercase fw-bold">product name</span>
+                                            <span class = "d-block">$ 68.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class = "col-lg-4 col-md-6 furniture">
+                                    <div class = "product-item">
+                                        <div class = "product-img">
+                                            <img src = "images/product_img_6.jpg" class = "img-fluid d-block mx-auto">
+                                        </div>
+                                        <div class = "product-content text-center py-3">
+                                            <span class = "d-block text-uppercase fw-bold">product name</span>
+                                            <span class = "d-block">$ 68.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <section>
+        </section>
+        <div class="footer">
+            <div id="button"></div>
+        <div id="container">
+        <div id="cont">
+        <div class="footer_center">
+                <h3></h3>
+                <p>Katie Chai  |  katiechai21@icloud.com  |  @katie.chai </p>
+        </div>
+        </div>
+        </div>
+        </div>
+        
+        <!-- Optional JavaScript -->
+        <!-- Popper.js first, then Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
+        <script src = "script.js"></script>
+        
+        <script>
+            window.addEventListener( "resize", ResizeWindow );
+
+            function ResizeWindow( )
+            {
+                var dataSpyList = [].slice.call( document.querySelectorAll( '[data-spy="scroll"]' ) );
+                
+                dataSpyList.forEach( function ( dataSpyElement )
+                {
+                    bootstrap.ScrollSpy.getInstance( dataSpyElement ).refresh( );
+                } );
+            }
+        </script>
+    </body>
+</html>
