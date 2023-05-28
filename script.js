@@ -1,9 +1,6 @@
-// init Isotope
-var $grid = $('#product-list').isotope({
-    // options
-  });
-  // filter items on button click
-  $('.filter-button-group').on( 'click', 'button', function() {
-    var filterValue = $(this).attr('data-filter');
-    $grid.isotope({ filter: filterValue });
-  });
+$('.navTrigger').click(function () {
+  $(this).toggleClass('active');
+  console.log("Clicked menu");
+  $("#mainListDiv").toggleClass("show_list");
+  $("#mainListDiv").fadeIn();
+});
